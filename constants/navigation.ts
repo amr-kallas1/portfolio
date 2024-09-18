@@ -1,15 +1,9 @@
 export const navigation = [
   {
-    name: "Islam Naasani",
+    name: "Amr Kallas",
     href: "/",
     color: "rgb(0 182 133)",
     startWith: false,
-  },
-  {
-    name: "Blog",
-    href: "/blog",
-    color: "rgb(99 102 241)",
-    startWith: true,
   },
   {
     name: "Projects",

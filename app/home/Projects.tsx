@@ -31,6 +31,7 @@ export const Projects: FC<ProjectsProps> = async ({}) => {
     }))
     .filter((project) => project.featured !== undefined)
     .sort((a, b) => a.rank - b.rank);
+
   return (
     <section className="flex flex-col gap-3">
       <h2 className="my-2 text-4xl">Projects</h2>

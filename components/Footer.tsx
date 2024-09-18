@@ -8,17 +8,12 @@ export const Footer: FC<FooterProps> = ({}) => {
   return (
     <footer className="grid grid-cols-1 justify-center gap-10 p-5 text-xl md:p-20 lg:grid-cols-3 lg:gap-0">
       <div className="flex flex-col gap-4">
-        <h5 className="text-3xl font-semibold">Islam Naasani</h5>
+        <h5 className="text-3xl font-semibold">Amr Kallas</h5>
         <nav>
           <ul className="flex flex-col gap-4 ps-4">
             <li>
               <Link href={"/"} className="underline">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link href={"/blog"} className="underline">
-                Blog
               </Link>
             </li>
             <li>
@@ -32,26 +27,26 @@ export const Footer: FC<FooterProps> = ({}) => {
       <div className="order-1 md:order-none">
         <div className="xs:gap-2 flex flex-row flex-wrap items-start justify-center text-xl lg:mt-0">
           <FooterLink
-            href={"https://github.com/I-3B"}
+            href={"https://github.com/amr-kallas"}
             gradientProps={{ className: "from-purple-800 to-purple-600" }}
           >
             <Github aria-label="GitHub" />
           </FooterLink>
           <FooterLink
             gradientProps={{ className: "from-blue-900 to-blue-600" }}
-            href={"https://www.linkedin.com/in/islam-nassani"}
+            href={"https://www.linkedin.com/in/amr-kallas-225a4724a/"}
           >
             <Linkedin aria-label="LinkedIn" />
           </FooterLink>
           <FooterLink
-            href={"mailto:islamnaasani@gmail.com"}
+            href={"mailto:amrkallas1@gmail.com"}
             gradientProps={{ className: "from-red-700 to-orange-500" }}
           >
             <Mail aria-label="Email" />
           </FooterLink>
           <FooterLink
             gradientProps={{ className: "from-blue-300 to-blue-600" }}
-            href="https://twitter.com/i_3b___"
+            href="https://x.com/AmrKallas?t=AQTdGQBBHb7mRQVoNiZFiw&s=35"
           >
             <svg
               width="396"
@@ -68,29 +63,13 @@ export const Footer: FC<FooterProps> = ({}) => {
             </svg>
           </FooterLink>
           <FooterLink
-            href={"https://t.me/islam_naasani"}
+            href={"https://t.me/Amr_Kallas"}
             gradientProps={{ className: "from-purple-800 to-blue-600" }}
           >
             <Send aria-label="Telegram" className="pr-1 pt-[2px]" />
           </FooterLink>
-          <FooterLink
-            href={"https://stackoverflow.com/users/14283533/i3b"}
-            gradientProps={{ className: "from-orange-400 to-orange-700" }}
-          >
-            <svg
-              aria-label="Stack Overflow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              viewBox="2 2 20 20"
-              className="fill-white"
-            >
-              <path d="M17.24 19.399v-4.804h1.6V21H4.381v-6.405h1.598v4.804H17.24zM7.582 17.8h8.055v-1.604H7.582V17.8zm.195-3.64 7.859 1.641.34-1.552-7.861-1.642-.338 1.553zm1.018-3.794 7.281 3.398.678-1.463-7.281-3.399-.678 1.454v.01zm2.037-3.589 6.166 5.142 1.018-1.216-6.162-5.14-1.016 1.213-.006.001zm3.982-3.778-1.311.969 4.803 6.454 1.313-.971-4.807-6.452h.002z"></path>
-            </svg>
-          </FooterLink>
         </div>
       </div>
-      <NewsletterForm className="-order-1 lg:order-1" />
     </footer>
   );
 };

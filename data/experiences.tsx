@@ -24,7 +24,7 @@ export const EXPERIENCES: Experience[] = [
     noDuration: true,
     description: (
       <>
-        <p>{`Currently in my senior year with 86.7% grade`}</p>
+        <p>{`Currently in my fourth year`}</p>
         <p className="pt-1">
           {
             "I've got equipped with a wide range of knowledge covering: algorithms, data structure, and software engineering mythologies"
@@ -43,117 +43,57 @@ export const EXPERIENCES: Experience[] = [
     ),
   },
   {
-    title: "Full Stack JavaScript Course (MERN stack)",
-    company: (
-      <Link target="_blank" href="https://www.theodinproject.com">
-        The Odin Project
-      </Link>
-    ),
-    from: "2021/01",
-    to: "2022/08",
-    description: (
-      <>
-        <p>
-          The Odin project is a high quality coding education platform
-          maintained by an open source community.
-        </p>
-        <p className="py-1">
-          {`I've`} took{" "}
-          <Link
-            target="_blank"
-            href="https://www.theodinproject.com/paths/foundations/courses/foundations"
-          >
-            the Foundation
-          </Link>{" "}
-          and{" "}
-          <Link
-            target="_blank"
-            href="https://www.theodinproject.com/paths/full-stack-javascript"
-          >
-            the Full Stack JavaScript (MERN)
-          </Link>
-          courses, covering a large amount of skills such as: JavaScript, Git,
-          React, Express, MongoDB, and TypeScript.
-        </p>
-        <p className="py-1">
-          {`The course also equipped me with a lot of soft skills like problem solving,
-             how to find solutions (googling) and a better developer mindset overall.`}
-        </p>
-        <p>
-          {`I've built many projects as a part of this course such as a `}
-          <Link target="_blank" href="https://github.com/I-3B/PurpleBook-API">
-            Facebook clone
-          </Link>
-          , a
-          <Link target="_blank" href="https://github.com/I-3B/blog-API">
-            {" "}
-            personal blog
-          </Link>{" "}
-          and a{" "}
-          <Link target="_blank" href="https://github.com/I-3B/members-only">
-            chatroom
-          </Link>
-        </p>
-      </>
-    ),
-  },
-  {
     title: "Front-end Developer",
     company: (
-      <Link target="_blank" href="http://www.ulutech-sy.com/">
+      <Link target="_blank" href="https://www.linkedin.com/company/ulutechsy/">
         Ulutech
       </Link>
     ),
     location: "Aleppo, Syria",
-    from: "2022-10",
-    to: "2022-12-8",
+    from: "2024-3",
+    to: null,
     description: (
       <>
-        <p>
+        <h1 className="text-4xl">Humy</h1>
+        <p className="mt-2">
           I have had the opportunity to work with a great team on a huge
-          project, which was a food delivery service called HumyApp it has been
-          uploaded to the store and currently has over 10k users. I worked in
-          the front-end team were we built the admin dashboard.
+          project, which was a food delivery service called HumyApp. I worked in
+          the front-end team were we built the admin dashboard and pioneer
+          dashboard.
         </p>
-        <p className="pt-1">
+        <p className="mb-2 pt-1">
           Our work was mainly crafting complex forms and CRUD operations to
           manage all of the three applications (customer, driver, pioneer) such
           as reviewing new drivers and posting customized notifications. The
           dashboard also has a permission-based authorization system.
         </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          Automatically 
+        </h1>
+        <p className="mt-2">
+          I built a Dashboard that performs CRUD operations , the dashboard
+          contains students, subjects, exams, and classes. Any school owner,
+          institute, or university can use it. The main purpose of this is to
+          correct automated exam templates by entering documents into an
+          external scanner.
+        </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          Butterfly 
+        </h1>
+        <p className="mt-2">
+          butterfly is a learning management system, where I developed the admin
+          dashboard: - CRUD operations to manage the platform resources with an
+          intuitive UI - Real-time support chat
+        </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          FID Resturant
+        </h1>
+        <p className="mt-2">
+          butterfly is a learning management system, where I developed the admin
+          dashboard: - CRUD operations to manage the platform resources with an
+          intuitive UI - Real-time support chat
+        </p>
       </>
     ),
-  },
-  {
-    title: "Front-end Developer",
-    company: "CLICK Online",
-    location: "Aleppo, Syria",
-    from: "2022-12",
-    to: "2023-12",
-    description: (
-      <>
-        <p>
-          {`CLICK Online is a product startup, I worked in the development team on two products.
-           One is Safra Binakra which is a centralized platform for inland traveling,
-            I built the web version of the user application, which was a mobile-first PWA, and a dashboard for managing the platform.`}
-        </p>
-        <p className="pt-1">
-          {`The second product is a management system for a university in Syria, which is still under development, where I also built a web-version app
-           and a dashboard with role-based authorization system.`}
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Front-end Developer",
-    company: (
-      <Link target="_blank" href="https://studio20.my/">
-        Studio20
-      </Link>
-    ),
-    location: "Kuala Lumpur, Malaysia (Remote)",
-    from: "2024-2-1",
-    to: null,
-    description: <p>{``}</p>,
   },
 ];

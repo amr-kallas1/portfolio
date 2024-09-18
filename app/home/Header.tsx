@@ -17,7 +17,7 @@ export const Header: FC<HeaderProps> = ({}) => {
           dragMomentum
           dragSnapToOrigin
         >
-          Islam Naasani
+          Amr Kallas
         </motion.h1>
         <motion.h2
           initial={{ y: 0, opacity: 1 }}

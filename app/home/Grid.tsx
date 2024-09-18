@@ -64,7 +64,7 @@ export const Grid: FC<GridProps> = ({}) => {
         ))}
       </div>
       <div className="absolute z-0 flex h-full items-center  text-4xl">
-        Islam Naasani
+        Amr Kallas
       </div>
     </div>
   );
