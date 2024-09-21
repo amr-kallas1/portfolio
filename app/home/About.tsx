@@ -21,17 +21,11 @@ export const About: FC<AboutProps> = ({}) => {
         height={500}
       />
       <p>
-        My journey in the world of web development began at the beginning of
-        2022 when I learned from {" "}
-        <Link target="_blank" href="https://www.youtube.com/@ElzeroWebSchool">
-           Elzero Web School
-        </Link>
-        . During this comprehensive program, I delved into front-end areas,
-        laying the foundation for my professional career in web development.
-        Then, I learned React from the{" "}
-        <Link target="_blank" href="https://react.dev/">
-          official website.
-        </Link>{" "}
+        I began my career in frontend development in 2022. Since then, I've
+        gained valuable experience working on various projects, honing my skills
+        in creating engaging user interfaces and improving overall user
+        experiences. My Journey During my time as a frontend developer, I've had
+        the opportunity to work on several exciting projects.
       </p>
       <p>
         I'm currently in my fourth year studying Computer Science at Aleppo

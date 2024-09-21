@@ -91,29 +91,32 @@ export const Experiences: FC<ExperiencesProps> = ({}) => {
               {exp.location && " • "}
               <span className="text-secondary-foreground">{exp.location}</span>
             </p>
-            <p className="ps-2 text-lg text-secondary-foreground">
-              <time dateTime={dayjs(exp.from).toISOString()}>
-                {dayjs(exp.from).format("MMM YYYY")}
-              </time>
-              {" – "}
-              {exp.to !== null ? (
-                <time dateTime={dayjs(exp.to).toISOString()}>
-                  {dayjs(exp.to).format("MMM YYYY")}
+            {exp.from && (
+              <p className="ps-2 text-lg text-secondary-foreground">
+                <time dateTime={dayjs(exp.from).toISOString()}>
+                  {dayjs(exp.from).format("MMM YYYY")}
                 </time>
-              ) : (
-                "Present"
-              )}
-              {!exp.noDuration && (
-                <>
-                  {" • "}
-                  {humanizeDuration(dayjs(exp.to ?? dayjs()).diff(exp.from), {
-                    units: ["y", "mo"],
-                    maxDecimalPoints: 0,
-                    round: true,
-                  })}
-                </>
-              )}
-            </p>
+                {" – "}
+                {exp.to !== null ? (
+                  <time dateTime={dayjs(exp.to).toISOString()}>
+                    {dayjs(exp.to).format("MMM YYYY")}
+                  </time>
+                ) : (
+                  "Present"
+                )}
+                {!exp.noDuration && (
+                  <>
+                    {" • "}
+                    {humanizeDuration(dayjs(exp.to ?? dayjs()).diff(exp.from), {
+                      units: ["y", "mo"],
+                      maxDecimalPoints: 0,
+                      round: true,
+                    })}
+                  </>
+                )}
+              </p>
+            )}
+
             <div className="ps-2 pt-1 text-lg">{exp.description}</div>
           </motion.div>
         </motion.article>

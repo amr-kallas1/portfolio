@@ -5,7 +5,7 @@ export type Experience = {
   title: ReactNode;
   company: ReactNode;
   location?: ReactNode;
-  from: string;
+  from: string | null;
   to: string | null;
   noDuration?: boolean;
   description: ReactNode;
@@ -19,7 +19,7 @@ export const EXPERIENCES: Experience[] = [
       </Link>
     ),
     location: "Aleppo, Syria",
-    from: "2019-9",
+    from: null,
     to: null,
     noDuration: true,
     description: (
@@ -34,7 +34,7 @@ export const EXPERIENCES: Experience[] = [
           {
             "as I took more software engineering courses I've done my 4th year project: "
           }
-          <Link target="_blank" href="https://github.com/i-3b/uBay">
+          <Link target="_blank" href="https://github.com/amr-kallas/uBay">
             uBay
           </Link>
           {` which is a social media platform for selling and buying second-hand items.`}
@@ -68,7 +68,7 @@ export const EXPERIENCES: Experience[] = [
           dashboard also has a permission-based authorization system.
         </p>
         <h1 className="text-4xl" style={{ marginTop: "12px" }}>
-          Automatically 
+          Automatically
         </h1>
         <p className="mt-2">
           I built a Dashboard that performs CRUD operations , the dashboard
@@ -78,7 +78,7 @@ export const EXPERIENCES: Experience[] = [
           external scanner.
         </p>
         <h1 className="text-4xl" style={{ marginTop: "12px" }}>
-          Butterfly 
+          Butterfly
         </h1>
         <p className="mt-2">
           butterfly is a learning management system, where I developed the admin
@@ -89,9 +89,11 @@ export const EXPERIENCES: Experience[] = [
           FID Resturant
         </h1>
         <p className="mt-2">
-          butterfly is a learning management system, where I developed the admin
-          dashboard: - CRUD operations to manage the platform resources with an
-          intuitive UI - Real-time support chat
+          i have built the dashboard with modern technologies, offering a wide
+          range of features tailored to meet the needs of both customers and
+          restaurant owners. The platform encompasses various modules, including
+          CRUD operations, Firebase notifications, orders, categories, coupons,
+          permissions, and store management.
         </p>
       </>
     ),
