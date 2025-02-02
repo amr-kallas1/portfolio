@@ -45,24 +45,6 @@ export const Footer: FC<FooterProps> = ({}) => {
             <Mail aria-label="Email" />
           </FooterLink>
           <FooterLink
-            gradientProps={{ className: "from-blue-300 to-blue-600" }}
-            href="https://x.com/AmrKallas?t=AQTdGQBBHb7mRQVoNiZFiw&s=35"
-          >
-            <svg
-              width="396"
-              aria-label="X/Twitter"
-              height="396"
-              viewBox="0 0 396 396"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M301.026 37.125H355.608L236.362 173.415L376.645 358.875H266.805L180.774 246.395L82.335 358.875H27.72L155.265 213.098L20.691 37.125H133.32L211.084 139.937L301.026 37.125ZM281.869 326.205H312.114L116.886 68.079H84.4305L281.869 326.205Z"
-                fill="white"
-              />
-            </svg>
-          </FooterLink>
-          <FooterLink
             href={"https://t.me/Amr_Kallas"}
             gradientProps={{ className: "from-purple-800 to-blue-600" }}
           >

@@ -51,7 +51,7 @@ export const EXPERIENCES: Experience[] = [
     ),
     location: "Aleppo, Syria",
     from: "2024-3",
-    to: null,
+    to: "2024-12",
     description: (
       <>
         <h1 className="text-4xl">Humy</h1>
