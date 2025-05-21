@@ -45,6 +45,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.11.2",
     "@tailwindcss/typography": "^0.5.10",
     "@types/humanize-duration": "^3.27.1",
     "autoprefixer": "^10.4.16",
