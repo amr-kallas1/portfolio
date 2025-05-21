@@ -12,13 +12,7 @@ import path from "path";
 type Props = {
   params: { slug: string };
 };
-export function generateStaticParams(): Props["params"][] {
-  const filesNames = readdirSync(getPublicPath("content/projects"), "utf8");
-  const slugs = filesNames.map((fileName) => ({
-    slug: path.parse(fileName).name,
-  }));
-  return slugs;
-}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const file = lookupPublicFile(
     getPublicPath(`content/projects/${params.slug}`),
