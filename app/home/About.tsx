@@ -14,7 +14,7 @@ export const About: FC<AboutProps> = ({}) => {
         initial={{ scale: 1, x: 0, y: 0 }}
         whileFocus={{ scale: 1.5, x: -100, y: 50 }}
         whileTap={{ scale: 1.5, x: -100, y: 50 }}
-        className=" float-right mx-4 my-1 aspect-square  w-[40%] max-w-xs cursor-pointer rounded-lg"
+        className=" float-right mx-4 my-1 aspect-square  w-[40%] max-w-xs cursor-pointer rounded-full object-cover object-top"
         alt="Islam's Profile Picture"
         width={500}
         priority
