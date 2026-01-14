@@ -24,10 +24,10 @@ export const EXPERIENCES: Experience[] = [
     noDuration: true,
     description: (
       <>
-        <p>{`Currently in my fourth year`}</p>
+        <p>{`Currently in my senior year`}</p>
         <p className="pt-1">
           {
-            "I've got equipped with a wide range of knowledge covering: algorithms, data structure, and software engineering mythologies"
+            "I've got equipped with a wide range of knowledge covering: algorithms, data structure, software engineering mythologies, and more"
           }
         </p>
         <p className="pt-1">
@@ -94,6 +94,41 @@ export const EXPERIENCES: Experience[] = [
           restaurant owners. The platform encompasses various modules, including
           CRUD operations, Firebase notifications, orders, categories, coupons,
           permissions, and store management.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Front-end Developer",
+    company: (
+      <Link target="_blank" href="">
+        Nova plattine
+      </Link>
+    ),
+    location: "Turkey",
+    from: "2025-10",
+    to: null,
+    description: (
+      <>
+        <p className="mt-2">
+          Worked as a Front-end Developer contributing to the design and
+          implementation of scalable, user-friendly web applications.
+          Collaborated closely with designers, backend developers, and product
+          teams to translate requirements into high-quality interfaces.
+        </p>
+
+        <p className="mt-2">
+          Built and maintained complex dashboards featuring dynamic forms, CRUD
+          operations, and role-based access control. Focused on creating
+          reusable components, improving performance, and ensuring clean,
+          maintainable code.
+        </p>
+
+        <p className="mt-2">
+          Emphasized responsive design, accessibility, and modern UI/UX
+          practices while working with contemporary front-end technologies.
+          Actively participated in code reviews, debugging, and continuous
+          improvement of the development workflow.
         </p>
       </>
     ),

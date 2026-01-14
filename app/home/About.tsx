@@ -28,7 +28,7 @@ export const About: FC<AboutProps> = ({}) => {
         the opportunity to work on several exciting projects.
       </p>
       <p>
-        I'm currently in my fourth year studying Computer Science at Aleppo
+        I'm currently in my senior year studying Computer Science at Aleppo
         University, where I've learned in depth about how computers work and how
         to build robust software.
       </p>
