@@ -19,6 +19,12 @@ export const SKILLS: Skill[] = [
       "My go-to UI library, with 1.5+ years of building applications with it, be it: dashboards, websites.",
   },
   {
+    name: "Next.js",
+    type: "framework",
+    description:
+      "I've built a full fleet management platform on the App Router: server components, route groups, middleware and internationalized routing.",
+  },
+  {
     name: "TypeScript",
     type: "language",
     description:

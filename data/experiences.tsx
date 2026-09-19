@@ -12,7 +12,7 @@ export type Experience = {
 };
 export const EXPERIENCES: Experience[] = [
   {
-    title: "CS Student",
+    title: "BSc in Computer Science",
     company: (
       <Link target="_blank" href="https://www.alepuniv.edu.sy/">
         University Of Aleppo
@@ -24,7 +24,7 @@ export const EXPERIENCES: Experience[] = [
     noDuration: true,
     description: (
       <>
-        <p>{`Currently in my senior year`}</p>
+        <p>{`Graduated in 2026 with a Bachelor's degree in Computer Science`}</p>
         <p className="pt-1">
           {
             "I've got equipped with a wide range of knowledge covering: algorithms, data structure, software engineering mythologies, and more"
@@ -78,14 +78,6 @@ export const EXPERIENCES: Experience[] = [
           external scanner.
         </p>
         <h1 className="text-4xl" style={{ marginTop: "12px" }}>
-          Butterfly
-        </h1>
-        <p className="mt-2">
-          butterfly is a learning management system, where I developed the admin
-          dashboard: - CRUD operations to manage the platform resources with an
-          intuitive UI - Real-time support chat
-        </p>
-        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
           FID Resturant
         </h1>
         <p className="mt-2">
@@ -129,6 +121,37 @@ export const EXPERIENCES: Experience[] = [
           practices while working with contemporary front-end technologies.
           Actively participated in code reviews, debugging, and continuous
           improvement of the development workflow.
+        </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          Syria Tracking
+        </h1>
+        <p className="mt-2">
+          A fleet management platform built with Next.js 15 and React 19. I
+          built the front-end: a live map showing every vehicle in real time
+          with MapLibre, route history playback, geofences drawn on the map with
+          Turf.js, reports exported to Excel, Firebase push notifications, and a
+          permission-based dashboard that runs fully in both English and Arabic
+          with RTL support.
+        </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          Elibdae Schools
+        </h1>
+        <p className="mt-2">
+          A school management dashboard covering students, teachers, classes,
+          exams and marks, attendance, tuition installments and bus routes,
+          along with a role builder for staff permissions. Runs in Arabic and
+          Turkish with a fully mirrored RTL layout, and renders report sheets to
+          PDF in the browser.
+        </p>
+        <h1 className="text-4xl" style={{ marginTop: "12px" }}>
+          Dar Care
+        </h1>
+        <p className="mt-2">
+          The admin panel for a home-cleaning marketplace, built from scratch
+          with React 19 and TanStack Router. It covers the full booking
+          lifecycle, worker onboarding and verification, payments and payouts,
+          reviews and disputes. Organized feature-first, with shared table
+          hooks that keep pagination, sorting and filters in the URL.
         </p>
       </>
     ),

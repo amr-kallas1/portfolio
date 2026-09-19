@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { Check, Copy } from "lucide-react";
 import NextImage, { ImageProps } from "next/image";
@@ -265,5 +266,23 @@ const MDXComponents = {
   code: Code,
   Code: Code,
   pre: CodeBlock,
+};
+export {
+  Image,
+  Source,
+  P,
+  Strong,
+  Blockquote,
+  OL,
+  UL,
+  LI,
+  H1,
+  H2,
+  H3,
+  H4,
+  A,
+  HR,
+  Code,
+  CodeBlock,
 };
 export default MDXComponents;

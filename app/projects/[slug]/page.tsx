@@ -1,7 +1,6 @@
 import { PageViewIncrementor } from "@/components/PageViewIncrementor";
 import { Badge } from "@/components/ui/badge";
-import { MDXRemote } from "@/lib/MDXRemote";
-import { readMdFile } from "@/utils/md";
+import { readMdContent, readMdFile } from "@/utils/md";
 import { getPublicPath, lookupPublicFile } from "@/utils/utils";
 import { projectMatterSchema } from "@/validation/project";
 import { readdirSync } from "fs";
@@ -37,9 +36,9 @@ export default async function Page({ params }: Props) {
       <p className="mt-20 w-full text-center text-4xl">Project not Found</p>
     );
 
-  const project = await readMdFile(file);
+  const { content, frontmatter } = await readMdContent(file);
 
-  const matter = projectMatterSchema.parse(project.frontmatter);
+  const matter = projectMatterSchema.parse(frontmatter);
   return (
     <PageViewIncrementor>
       <article className="mx-auto mt-20 flex max-w-3xl flex-col gap-3 px-4 text-lg sm:mt-20">
@@ -78,7 +77,7 @@ export default async function Page({ params }: Props) {
           alt="project's home page"
         />
         <div className="prose prose-quoteless mt-4 max-w-full dark:prose-invert md:prose-lg prose-h2:text-3xl prose-p:my-2 prose-p:text-foreground prose-a:visited:text-purple-200 prose-blockquote:my-1 prose-ul:ml-0 prose-img:rounded-sm sm:prose-h2:text-4xl">
-          <MDXRemote {...project} />
+          {content}
         </div>
       </article>
     </PageViewIncrementor>

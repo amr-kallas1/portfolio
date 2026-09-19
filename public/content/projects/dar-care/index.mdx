@@ -1,0 +1,88 @@
+---
+title: Dar Care
+summary: An admin dashboard for a home-cleaning marketplace — bookings, workers, payouts and disputes.
+smallCover: /content/projects/dar-care/dashboard.jpg
+largeCover: /content/projects/dar-care/dashboard.jpg
+skills: React 19,TypeScript,TanStack Router,React Query,Tailwind CSS
+featured: true
+rank: 4
+---
+
+## About
+
+Dar Care is a marketplace that connects households with cleaning workers. This
+is the admin panel the operations team uses to run it: who is booked, who got
+paid, and what went wrong.
+
+I built the dashboard from scratch.
+
+## The Dashboard
+
+The landing view answers the questions the team asks every morning — revenue
+and the platform's cut, how many requests are open, how many workers are still
+waiting for approval — with charts I drew as plain SVG rather than pulling in a
+charting library.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&_img]:m-0 [&_img]:object-cover">
+  ![Dashboard with revenue, request status and people](dashboard.jpg)
+</div>
+
+## Bookings, Workers & Customers
+
+A cleaning request moves through a lifecycle — new, waiting for offers,
+negotiating, accepted, in progress, completed, cancelled — and the requests
+table is where the team steers it.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&_img]:m-0 [&_img]:object-cover">
+  ![Cleaning requests table](requests.jpg)
+</div>
+
+Workers are onboarded through a multi-step form and carry an approval state, an
+account state and a rating. Customers get the same treatment on their side.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&>p]:md:grid-cols-2 [&_img]:m-0 [&_img]:object-cover">
+  ![Cleaning workers with approval state](workers.jpg) ![Customers](customers.jpg)
+</div>
+
+## Money & Conflict
+
+Payments show what the customer paid, the fee the platform kept and what the
+worker is owed. Disputes are where a booking went wrong, and each one can be
+worked and resolved in place.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&>p]:md:grid-cols-2 [&_img]:m-0 [&_img]:object-cover">
+  ![Payments with fees and payouts](payments.jpg) ![Disputes](disputes.jpg)
+</div>
+
+Settings hold the fees, tax and limits the customer and worker apps enforce, so
+operations can change the platform's economics without a deploy.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&_img]:m-0 [&_img]:object-cover">
+  ![Fees, tax and platform limits](settings.jpg)
+</div>
+
+## Dark Mode
+
+The whole app has a dark theme — every table, chart and form, not just the shell.
+
+<div className="[&>p]:grid [&>p]:gap-1 [&_img]:m-0 [&_img]:object-cover">
+  ![The dashboard in dark mode](dark-mode.jpg)
+</div>
+
+## How it is built
+
+The codebase is organized feature-first — every feature owns its API layer,
+components and validation schemas, so nothing leaks between them.
+
+Routing is [TanStack Router](https://tanstack.com/router) configured in code,
+with the session check in `beforeLoad`: an unauthenticated visitor is bounced
+to `/login` carrying a `?redirect=` back to wherever they were headed.
+
+Tables share one set of hooks for pagination, sorting, filtering and row
+selection, and each table's state lives in the URL — so a filtered view is a
+link you can send to someone.
+
+## Tech
+
+React 19 with the React Compiler, TypeScript, Vite, TanStack Router and Query,
+Tailwind CSS v4 with Base UI primitives, and React Hook Form + Yup.
